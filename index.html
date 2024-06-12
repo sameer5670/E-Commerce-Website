@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+<!-- Header start--> 
+    <header class="header">
+        <div class="paqpaq">
+            <a href="#" class="logo"><i class="fas fa-shopping-basket"></i>rapid deals</a>
+        </div>
+        <nav class="navbar" id="primary">
+            <a href="#home" class="hover-line">home</a>
+            <a href="#features" class="hover-line">features</a>
+            <a href="#products" class="hover-line">products</a>
+            <a href="#categories" class="hover-line">categories</a>
+            <a href="#review" class="hover-line">review</a>
+            <a href="#blogs" class="hover-line">blogs</a>
+        </nav>
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <!--<div class="fas fa-shopping-cart" id="cart-btn"></div>-->
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+        <!--search icon-->
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here..." onkeyup="search()">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+        <!--cart icon-->
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image1.png" alt="" width="120" height="120">
+                <div class="content">
+                    <h3>watermelon</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image2.png" alt="" width="120" height="120">
+                <div class="content">
+                    <h3>onion</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="image3.png" alt="" width="120" height="120">
+                <div class="content">
+                    <h3>sweet corn</h3>
+                    <span class="price">$4.99/-</span>
+                    <span class="quantity">qty : 1</span>
+                </div>
+            </div>
+            <div class="total">total : $19.69/-</div>
+            <a href="#" class="btn">checkout</a>
+            </div>
+        </div>
+        <!--login icon-->
+        <form action="" class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="enter email" class="box">
+            <input type="password" placeholder="enter password" class="box">
+            <p>forgot password?<a href="#">click here</a></p>
+            <p>don't have an account?<a href="#">sign up</a></p>
+            <button class="btn"><a href="#home">login now</a></button>
+        </form>
+    </header>
+<!--header ends-->
+
+<!--home section start-->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>deals made specially for <span style="text-decoration: underline; color: black;">you</span></h3>
+        <p>don't be slow because prices are low!!!</p>
+        <a href="#products" class="btn">shop now</a>
+    </div>
+</section>
+<!--home section ends-->
+
+<!--features section start-->
+
+<section class="features" id="features">
+    <h1 class="heading">our <span>features</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="assets/habibi.jpg" alt="" class="organic">
+            <h3>different products and groceries under one roof</h3>
+            <a href="https://business.amazon.in/en/key-features/simplify-buying/selection/it-products" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="assets/meow.jpeg" alt="">
+            <h3>discounted and lower prices</h3>
+            <a href="https://www.amazon.com/gp/help/customer/display.html?ref_=hp_left_v4_sib&nodeId=GW3L8JX7Q9FH8ALB" class="btn">read more</a>
+        </div>
+        <div class="box">
+            <img src="assets/feat3.png" alt="">
+            <h3>collection of various brands</h3>
+            <a href="https://www.myntra.com/brands" class="btn">read more</a>
+        </div>
+    </div>
+</section>
+<!--features section ends-->
+
+<!--products section starts-->
+
+<section class="products" id="products">
+    <h1 class="heading"><span>products</span></h1>
+    <h3 style="text-align: center; font-size: 20px; margin-bottom: 15px; background-color: bisque;">note:-click on search button to get search bar and swipe left for more products</h3>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box  sam">
+                <img src="assets/pro1.png" alt="" class="bottle">
+                <h3>bottle gaurd</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.bigbasket.com/pd/50000468/fresho-bottle-gourd-organically-grown-1-pc/?nc=l3category&t_pg=L3Categories&t_p=l3category&t_s=l3category&t_pos=3&t_ch=desktop" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/am1.jpg" alt="" class="capsicum">
+                <h3>iQOO Z7s 5G by vivo</h3>
+                <div class="price">&#8377;18999/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.amazon.in/iQOO-Storage-Snapdragon-Processor-44WFlashCharge/dp/B07WHS7MZ4/?_encoding=UTF8&_ref=dlx_gate_sd_dcl_tlt_30494eb5_dt&pd_rd_w=hb8zE&content-id=amzn1.sym.9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_p=9e4ae409-2145-4395-aa6e-45d7f3e95c3e&pf_rd_r=QT18E55MNHHFF87NRZRY&pd_rd_wg=kLNCs&pd_rd_r=f5769a29-19c8-4bab-b67b-a9bedb636050&ref_=pd_gw_unk" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/pro3.png" alt="" class="potato">
+                <h3>potatoes</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.bigbasket.com/pd/40023476/fresho-potato-organically-grown-1-kg/?nc=l3category&t_pg=L3Categories&t_p=l3category&t_s=l3category&t_pos=3&t_ch=desktop" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/pro2.png" alt="" class="capsicum">
+                <h3>capsicum</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.bigbasket.com/pd/50000479/fresho-capsicum-green-organically-grown-1-kg/?nc=l3category&t_pg=L3Categories&t_p=l3category&t_s=l3category&t_pos=3&t_ch=desktop" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/am2.jpg" alt="" class="potato">
+                <h3>puma unisex - adult</h3>
+                <div class="price">&#8377;8,999/-</div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.amazon.in/Puma-Unisex-Adult-Feather-Gray-White-Sneaker/dp/B0BRBJXT7B/ref=d_pd_sbs_sccl_2_3/259-6851390-1859748?pd_rd_w=yfXf2&content-id=amzn1.sym.fa697102-547e-425b-bc67-26478c036f29&pf_rd_p=fa697102-547e-425b-bc67-26478c036f29&pf_rd_r=Z4Z94C6R9GXNGW5Q7K0Y&pd_rd_wg=C6H1y&pd_rd_r=b8838958-44cb-442b-a54b-dc02c2f0ec24&pd_rd_i=B0BRB2PYBW&psc=1" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/pro4.png" alt="" class="chilly">
+                <h3>green chilly</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.bigbasket.com/pd/50000511/fresho-chilli-green-organically-grown-100-g/?nc=l3category&t_pg=L3Categories&t_p=l3category&t_s=l3category&t_pos=3&t_ch=desktop" class="btn">shop now</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box sam">
+                <img src="assets/pro5.png" alt="" class="meat">
+                <h3>fresh meat</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.amazon.in/FreshToHome-Premium-Antibiotic-Residue-Boneless/dp/B0BH8Z81SD/ref=sr_1_4_f3_wg?almBrandId=ctnow&crid=1P0PWYMAC8P1C&fpw=alm&keywords=meat&qid=1690112325&s=nowstore&sprefix=meat%2Cfresh%2C230&sr=1-4" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/pro6.png" alt="" class="banana">
+                <h3>banana's</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.bigbasket.com/pd/10000031/fresho-banana-yelakki-1-kg/?nc=cl-prod-list&t_pg=&t_p=&t_s=cl-prod-list&t_pos=1&t_ch=desktop" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/pro7.png" alt="" class="orange">
+                <h3>juicy oranges</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.bigbasket.com/pd/20000909/fresho-orange-imported-4-pcs/?nc=as&q=orange" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/pro8.png" alt="" class="carrot">
+                <h3>carrots</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.bigbasket.com/pd/10000270/fresho-carrot-ooty-250-g/?nc=as&q=carrots" class="btn">shop now</a>
+            </div>
+        </div>
+    </div>
+    <div class="swiper product-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box sam">
+                <img src="assets/pod9.png" alt="" class="meat">
+                <h3>chobani yogurt</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.amazon.in/Epigamia-Probiotic-Yogurt-Strawberry-75g/dp/B094V6GZHS/ref=sr_1_2_f3_wg?almBrandId=ctnow&crid=1L2GPV2S5R045&fpw=alm&keywords=chobani+yogurt&qid=1690112579&s=nowstore&sprefix=chobani+%2Cfresh%2C242&sr=1-2" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/pod10.png" alt="" class="banana">
+                <h3>guava</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.amazon.in/Fresh-Organic-Guava-250-g/dp/B07KKJ1952/ref=sr_1_2_f3_wg?almBrandId=ctnow&fpw=alm&keywords=guava&qid=1690112639&s=nowstore&sprefix=guava%2Cfresh%2C388&sr=1-2" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/pod11.png" alt="" class="orange">
+                <h3>tomatoes</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.amazon.in/Fresh-Tomato-Hybrid-1kg-Pack/dp/B07BG6QWJK/ref=sr_1_1_f3_wg?almBrandId=ctnow&crid=3NM6K8YMZHSEB&fpw=alm&keywords=tomato&qid=1690112669&s=nowstore&sprefix=toma%2Cfresh%2C209&sr=1-1" class="btn">shop now</a>
+            </div>
+            <div class="swiper-slide box sam">
+                <img src="assets/am3.webp" alt="" class="carrot">
+                <h3>apples</h3>
+                <div class="price">$4.99/- - 10.99/- </div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <a href="https://www.amazon.in/Fresh-Delicious-Apple-800g-Pack/dp/B07BG79D3S/ref=sr_1_2_f3_wg?almBrandId=ctnow&crid=1KBVPXESGKWLR&fpw=alm&keywords=fruits&qid=1690112744&s=nowstore&sprefix=fruits%2Cfresh%2C225&sr=1-2" class="btn">shop now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--products section ends-->
+
+<!--category section start-->
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="assets/cat1.png" alt="" class="cat1">
+            <h3>vegetables</h3>
+            <p>upto 45% off</p>
+            <a href="https://www.bigbasket.com/pc/fruits-vegetables/fresh-vegetables/?nc=nb" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/cat2.png" alt="" class="cat2">
+            <h3>fresh fruits</h3>
+            <p>upto 40% off</p>
+            <a href="https://www.bigbasket.com/pc/fruits-vegetables/fresh-fruits/?nc=nb" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/mobile.jpg" alt="" class="cat3">
+            <h3>mobiles</h3>
+            <p>upto 30% off</p>
+            <a href="https://www.amazon.in/gp/browse.html?node=1389401031&ref_=nav_em_sbc_mobcomp_all_mobiles_0_2_8_2" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/refri.jpg" alt="" class="cat4">
+            <h3>large appliances</h3>
+            <p>upto 35% off</p>
+            <a href="https://www.amazon.in/gp/browse.html?node=5122348031&ref_=nav_em_sbc_tvelec_all_appliance_0_2_9_20" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/cloth.jpeg" alt="" class="cat5">
+            <h3>clothing</h3>
+            <p>upto 40% off</p>
+            <a href="https://www.amazon.in/deal/8c82912f?pf_rd_r=36S8F08JCFSZBXS0450P&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=04c45e01-a63d-4e8e-bd7b-f1286cb6b49b&pf_rd_s=slot-15&ref=dlx_deals_gd_dcl_img_0_8c82912f_dt_sl15_9b" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/cat6.png" alt="" class="cat6">
+            <h3>beauty products</h3>
+            <p>upto 45% off</p>
+            <a href="https://www.bigbasket.com/cl/beauty-hygiene/?nc=nb" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/cat3.png" alt="" class="cat3">
+            <h3>dairy products</h3>
+            <p>upto 20% off</p>
+            <a href="https://www.bigbasket.com/ps/?q=dairy%20products#!page=1" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/lap.jpg" alt="" class="cat6">
+            <h3>laptops</h3>
+            <p>upto 15% off</p>
+            <a href="https://www.amazon.in/deal/c9fadf5f?showVariations=true&pf_rd_r=00V5MF0155D28PMRABSV&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=04c45e01-a63d-4e8e-bd7b-f1286cb6b49b&pf_rd_s=slot-15&ref=dlx_deals_gd_dcl_img_0_c9fadf5f_dt_sl15_9b" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/book.webp" alt="" class="cat4">
+            <h3>books</h3>
+            <p>upto 40% off</p>
+            <a href="https://www.amazon.in/s/ref=AF_WIN_bub_w_cml_t_1?pf_rd_r=B0CH6ZPZ5QB199EEFHBM&pf_rd_p=7379c729-6ae8-4d83-ab58-84c38052d6df&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-12&pf_rd_t=&pf_rd_i=976389031&i=stripbooks&bbn=976389031&rh=n%3A976389031%2Cp_n_specials_match%3A21618256031%2Cp_85%3A10440599031" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/cat8.png" alt="" class="cat6">
+            <h3>foodgrains & masala's</h3>
+            <p>upto 25% off</p>
+            <a href="https://www.bigbasket.com/cl/foodgrains-oil-masala/?nc=nb" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/cat5.png" alt="" class="cat5">
+            <h3>snacks & sweets</h3>
+            <p>upto 45% off</p>
+            <a href="https://www.bigbasket.com/pc/snacks-branded-foods/indian-mithai/?nc=ct-fa&sid=Vpwf6I-ibWQBoWMBqHNrdV9saXN0kKJuZsOiY2OoMzk4fDE2MjipYmF0Y2hfaWR4AKJhb8KidXLComFww6JsdM0BLaNkc2rNJrShb6pwb3B1bGFyaXR5pXNyX2lkAaJkc80GuKNtcmkB" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/game.jpg" alt="" class="cat6">
+            <h3>video games</h3>
+            <p>upto 20% off</p>
+            <a href="https://www.amazon.in/gp/browse.html?node=976460031&ref_=nav_em_sbc_mmvg_allvg_0_2_18_13" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/cat4.png" alt="" class="cat4">
+            <h3>beverages</h3>
+            <p>upto 10% off</p>
+            <a href="https://www.amazon.in/b/ref=GroceryHaloPC_2?pf_rd_r=WN98X46DGDPP16T2F84P&pf_rd_p=ff195db5-665e-4263-bcce-c9ec43e298fe&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=2454178031&node=4859478031" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/foot.jpg" alt="" class="cat6">
+            <h3>footware</h3>
+            <p>upto 40% off</p>
+            <a href="https://www.amazon.in/deal/7b6681a8?moreDeals=9486e1dd%2C3438e56b%2Cbb518a5c&pf_rd_r=5GZ8APJHKZQ59ZQ44DQB&pf_rd_t=Events&pf_rd_i=deals&pf_rd_p=04c45e01-a63d-4e8e-bd7b-f1286cb6b49b&pf_rd_s=slot-15&ref=dlx_deals_gd_dcl_img_7_7b6681a8_dt_sl15_9b" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/cat7.png" alt="" class="cat6">
+            <h3>dry fruits</h3>
+            <p>upto 10% off</p>
+            <a href="https://www.amazon.in/b/ref=GroceryHaloPC_1?pf_rd_r=WN98X46DGDPP16T2F84P&pf_rd_p=ff195db5-665e-4263-bcce-c9ec43e298fe&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_s=merchandised-search-1&pf_rd_t=&pf_rd_i=2454178031&node=4859612031" target="_blank" class="btn">shop now</a>
+        </div>
+        <div class="box">
+            <img src="assets/kids.jpg" alt="" class="cat6">
+            <h3>kids & baby</h3>
+            <p>upto 40% off</p>
+            <a href="https://www.amazon.in/gp/browse.html?node=1571274031&ref_=nav_em_sbc_tbk_baby_products_0_2_15_3" target="_blank" class="btn">shop now</a>
+        </div>
+    </div>
+
+
+</section>
+
+<!--category section ends-->
+
+<!--reviews section starts-->
+
+<section class="review" id="review">
+    <h1 class="heading">customer's <span>review</span></h1>
+    <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide box">
+                <img src="assets/rev1.png" alt="">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, ducimus quam nemo numquam voluptates nihil?</p>
+                <h3>john deo</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="assets/rev6.png" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, consequuntur voluptates beatae sequi facilis vitae?</p>
+                <h3>suhana khan</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="assets/rev2.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae qui quod dignissimos facilis distinctio temporibus?</p>
+                <h3>steve smith</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="assets/rev3.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugit eveniet accusantium numquam, cum eum.</p>
+                <h3>harry brook</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="assets/rev4.png" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo accusantium sit vero sint earum expedita!</p>
+                <h3>mark wood</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="swiper-slide box">
+                <img src="assets/rev5.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, voluptatem cumque officia ad est illum!</p>
+                <h3>sam</h3>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--reviews section ends-->
+
+<!--blogs section starts-->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"><span>blogs</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+
+            <img src="assets/sam.webp" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="https://blog.bigbasket.com/2023/06/03/in-season-start-of-the-monsoon-mangoes/" target="_blank" ><i class="fas fa-user"></i>by big basket</a>
+                    <a><i class="fas fa-calendar"></i>1st july, 2023</a>
+                </div>
+                <h3>Start of the Monsoon Mangoes</h3>
+                <p>In the scorching embrace of summer, there is one fruit that stands above all others, earning its royal title as...</p>
+                <a href="https://blog.bigbasket.com/2023/06/03/in-season-start-of-the-monsoon-mangoes/" target="_blank" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+
+            <img src="assets/sam2.webp" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="https://p-yo-www-amazon-in-kalias.amazon.in/Dell-1135G4-Graphics-Windows-Business/dp/B09T5YYDH7" target="_blank"><i class="fas fa-user"></i>by amazon</a>
+                    <a><i class="fas fa-calendar"></i>1st july, 2023</a>
+                </div>
+                <h3>Dell Vostro 3510 laptop</h3>
+                <p>Dell Vostro 3510 laptop comes with the 11th Gen Intel Core processor, 15.6" FHD narrow border display, integrated graphics, 512 GB solid state drive and 8GB, 2666MHz memory...</p>
+                <a href="https://p-yo-www-amazon-in-kalias.amazon.in/Dell-1135G4-Graphics-Windows-Business/dp/B09T5YYDH7" target="_blank" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+
+            <img src="assets/sam3.webp" alt="">
+            <div class="content">
+                <div class="icons">
+                    <a href="https://blog.bigbasket.com/2023/04/21/exploring-the-nutritious-world-of-indian-legumes/" target="_blank"><i class="fas fa-user"></i>by big basket</a>
+                    <a><i class="fas fa-calendar"></i>1st july, 2023</a>
+                </div>
+                <h3>Exploring the Nutritious World of Indian Legumes</h3>
+                <p>Dals/legumes are a key ingredient in Indian cuisine and an important source of nutrition. They are rich in protein, fibre,...</p>
+                <a href="https://blog.bigbasket.com/2023/04/21/exploring-the-nutritious-world-of-indian-legumes/" target="_blank" class="btn">read more</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--blogs section ends-->
+<!--footer section starts-->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <div class="paqpaq">
+                <h3>rapid deals <i class="fas fa-shopping-basket"></i></h3>
+            </div>
+            <p>here cheap has quality!!!</p>
+            <div class="share">
+                <a href="https://www.facebook.com/Raistargamer" class="fab fa-facebook"></a>
+                <a href="https://t.me/+919392604725" class="fab fa-telegram"></a>
+                <a href="https://instagram.com/sameer__sam_754?igshid=ZDc4ODBmNjlmNQ==" class="fab fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/abdul-sameer-900a48241?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B4a7v5mTQTUmKXaMzfT%2BzwA%3D%3D" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="tel:9392604725" class="links"><i class="fas fa-phone"></i>+9193-9260-4725</a>
+            <a href="tel:1112223333" class="links"><i class="fas fa-phone"></i>+111-222-3333</a>
+            <a href="mailto:abdulsameer5670@gmail.com" class="links sam"><i class="fas fa-envelope"></i>abdulsameer5670@gmail.com</a>
+            <a href="https://goo.gl/maps/QQPtohhgxwpBPRm97" target="_blank" class="links"><i class="fas fa-map-marker-alt"></i>nizamabad, india - 503001</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"><i class="fas fa-arrow-right"></i>home</a>
+            <a href="#features" class="links"><i class="fas fa-arrow-right"></i>features</a>
+            <a href="#products" class="links"><i class="fas fa-arrow-right"></i>products</a>
+            <a href="#categories" class="links"><i class="fas fa-arrow-right"></i>categories</a>
+            <a href="#review" class="links"><i class="fas fa-arrow-right"></i>review</a>
+            <a href="#blogs" class="links"><i class="fas fa-arrow-right"></i>blogs</a>
+        </div>
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="assets/pay.png" alt="" class="payment-img">
+        </div>
+    </div>
+    <div class="credit">created by <span>sam </span>| copyright &copy; | all rights reserved</div>
+</section>
+
+<!--footer section ends-->
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="shop.js"></script>
+</body>
+</html>
